@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+
 import { CartProvider } from './context/CartContext';
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -29,6 +31,7 @@ import PreWeddingShoot1 from './pages/subpages/Preweddings/PreWeddingShoot1';
 import SlideOutCart from './components/SlideOutCart';
 
 function App() {
+
   const [isCartOpen, setCartOpen] = useState(false);
 
   const toggleCart = () => {
@@ -36,17 +39,19 @@ function App() {
   };
 
   return (
-    <Router basename="/nsweb">
-      <Header toggleCart={toggleCart} />
+    <div>
+      <Header />
       <CartProvider>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/book" element={<Book />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/education" element={<Education />} />
-          <Route path="/presets" element={<Presets />} />
-          <Route path="/full-item/stoic-pack" element={<StoicPreset />} />
+     
+        <Header toggleCart={toggleCart} />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/book" element={<Book />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/education" element={<Education />} />
+        <Route path="/presets" element={<Presets />} />
+        <Route path="/full-item/stoic-pack" element={<StoicPreset />} />
           <Route path="/full-item/regal-tones" element={<RegalPreset />} />
           <Route path="/full-item/earthy-tone" element={<EarthyPreset />} />
           <Route path="/full-item/soul-tone" element={<SoulTonePreset />} />
@@ -54,20 +59,21 @@ function App() {
           <Route path="/full-item/awaken" element={<AwakenPreset />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/thank-you" element={<ThankYou />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/services/weddings" element={<Weddings />} />
-          <Route path="/services/pre-post-weddings" element={<PrePostWeddings />} />
-          <Route path="/services/event-coverage" element={<EventCoverage />} />
-          <Route path="/services/ad-films" element={<AdFilms />} />
-          <Route path="/services/fashion-shoots" element={<FashionShoots />} />
-          <Route path="/weddings/bani-karl" element={<BaniKarl />} />
-          <Route path="/services/others" element={<Others />} />
-          <Route path="/preweddings/pre-wedding-shoot-1" element={<PreWeddingShoot1 />} />
-        </Routes>
-        <Footer />
-        <SlideOutCart isOpen={isCartOpen} setOpen={setCartOpen} />
-      </CartProvider>
-    </Router>
+        <Route path="/services" element={<Services />} />
+        <Route path="/services/weddings" element={<Weddings />} />
+        <Route path="/services/pre-post-weddings" element={<PrePostWeddings />} />
+        <Route path="/services/event-coverage" element={<EventCoverage />} />
+        <Route path="/services/ad-films" element={<AdFilms />} />
+        <Route path="/services/fashion-shoots" element={<FashionShoots />} />
+        <Route path="/weddings/bani-karl" element={<BaniKarl />} />
+        <Route path="/services/others" element={<Others />} />
+        <Route path="/preweddings/pre-wedding-shoot-1" element={<PreWeddingShoot1 />} />
+      </Routes>
+      <Footer />
+      <SlideOutCart isOpen={isCartOpen} setOpen={setCartOpen} />
+     
+    </CartProvider>
+    </div>
   );
 }
 
