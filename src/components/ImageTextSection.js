@@ -28,13 +28,13 @@ const ImageSection = () => {
     return () => clearInterval(intervalId); // Cleanup on component unmount
   }, []);
 
-  const handlePrevious = () => {
-    setActiveIndex((prevIndex) => (prevIndex - 1 + imgArray.length) % imgArray.length);
-  };
+  // const handlePrevious = () => {
+  //   setActiveIndex((prevIndex) => (prevIndex - 1 + imgArray.length) % imgArray.length);
+  // };
 
-  const handleNext = () => {
-    setActiveIndex((prevIndex) => (prevIndex + 1) % imgArray.length);
-  };
+  // const handleNext = () => {
+  //   setActiveIndex((prevIndex) => (prevIndex + 1) % imgArray.length);
+  // };
 
   return (
     <div className="image-section">
@@ -47,14 +47,12 @@ const ImageSection = () => {
         </p>
       </div>
 
-      <div className="gallery-box">
-        <button className="gallery-btn prev" onClick={handlePrevious}>‹</button>
+      <div className="gallery-box1">
         <div className="gallery-display">
           {imgArray.slice(activeIndex, activeIndex + 3).map((img, idx) => (
             <img src={img} alt={`Gallery ${idx}`} key={idx} className="gallery-img" />
           ))}
         </div>
-        <button className="gallery-btn next" onClick={handleNext}>›</button>
       </div>
     </div>
   );

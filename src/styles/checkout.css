@@ -1,5 +1,5 @@
 /* Checkout Page */
-.checkout-page1 {
+.checkout-page {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,7 +7,7 @@
   margin-top: 100px; /* Adds space from the top */
 }
 
-form {
+.checkout-form {
   width: 100%;
   max-width: 600px;
   background: #f9f9f9;
@@ -17,17 +17,18 @@ form {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
+.checkout-form h2 {
   margin-bottom: 20px;
   font-size: 1.5em;
 }
 
-label {
+.checkout-form label {
   display: block;
   margin-bottom: 15px;
 }
 
-input, textarea {
+.checkout-form input,
+.checkout-form textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -35,7 +36,7 @@ input, textarea {
   font-size: 1em;
 }
 
-button {
+.checkout-form button {
   background-color: #007bff;
   color: white;
   border: none;
@@ -48,11 +49,11 @@ button {
   transition: background-color 0.3s ease;
 }
 
-button:hover {
+.checkout-form button:hover {
   background-color: #0056b3;
 }
 
-.cart-summary {
+.checkout-cart-summary {
   width: 100%;
   max-width: 600px;
   margin-bottom: 20px;
@@ -62,30 +63,30 @@ button:hover {
   background-color: #f9f9f9;
 }
 
-.cart-item {
+.checkout-cart-item {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
 
-.cart-item-image {
+.checkout-cart-item-image {
   width: 50px;
   height: 50px;
   margin-right: 10px;
 }
 
-.cart-item-details {
+.checkout-cart-item-details {
   flex-grow: 1;
 }
 
-.cart-total {
+.checkout-cart-total {
   margin-top: 10px;
   text-align: right;
   font-size: 1.2em;
   font-weight: bold;
 }
 
-.paypal-button-container {
+.checkout-paypal-button-container {
   width: 100%;
   max-width: 400px;
   margin-top: 20px;
@@ -98,19 +99,19 @@ button:hover {
     margin-top: 100px;
   }
 
-  form {
+  .checkout-form {
     padding: 15px;
   }
 
-  button {
+  .checkout-form button {
     padding: 12px;
   }
 
-  .cart-summary {
+  .checkout-cart-summary {
     margin-bottom: 15px;
   }
 
-  .paypal-button-container {
+  .checkout-paypal-button-container {
     max-width: 100%;
   }
 }

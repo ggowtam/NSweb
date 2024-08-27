@@ -28,7 +28,7 @@
   line-height: 1.5;
 }
 
-.gallery-box {
+.gallery-box1 {
   position: relative;
   margin: 2rem auto;
   width: 100%;
@@ -58,19 +58,6 @@
   margin-right: 0; // Remove margin on the last image
 }
 
-.gallery-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  border: none;
-  padding: 1rem;
-  cursor: pointer;
-  border-radius: 4px;
-  z-index: 10;
-  font-size: 1.5rem;
-}
 
 .gallery-btn.prev {
   left: 10px;

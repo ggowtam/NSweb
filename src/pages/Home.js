@@ -41,7 +41,7 @@ const Home = () => {
   return (
     <div>
       <div className="home-container">
-        <video ref={videoRef} autoPlay loop muted className="video-background">
+        <video ref={videoRef} autoPlay loop muted playsInline  className="video-background">
           <source src={videoSrc} type="video/webm" /> {/* Ensure format compatibility */}
           Your browser does not support the video tag.
         </video>

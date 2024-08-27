@@ -55,7 +55,7 @@ const Checkout = () => {
   return (
     <div className="checkout-page1">
       {!formSubmitted ? (
-        <form onSubmit={handleSubmit}>
+        <form className="checkout-form" onSubmit={handleSubmit}>
           <h2>Enter Your Details</h2>
           <label>
             Name:
@@ -78,7 +78,7 @@ const Checkout = () => {
       ) : (
         <>
           <h2>Your Cart</h2>
-          <div className="cart-summary">
+          <div className="checkout-cart-summary">
             <div className="cart-total">
               <h3>Total: ${totalAmount}</h3>
             </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 import '../styles/SlideOutCart.scss';
+import Cart from '../assets/cart-icon.png';
 
 const SlideOutCart = ({ isOpen, setOpen }) => {
   const { cartItems, removeItemFromCart } = useCart();
@@ -57,7 +58,7 @@ const SlideOutCart = ({ isOpen, setOpen }) => {
       {/* Floating Cart Icon */}
       {!isOpen && cartItems.length > 0 && (
         <div className="floating-cart-icon" onClick={handleOpen} aria-label="Open cart">
-          <img src="/path/to/cart-icon.png" alt="Cart Icon" />
+          <img Src ={Cart} alt="Cart Icon" />
           <span className="cart-item-count">{cartItems.length}</span>
         </div>
       )}
