@@ -53,7 +53,7 @@ const Checkout = () => {
   };
 
   return (
-    <div className="checkout-page">
+    <div className="checkout-page1">
       {!formSubmitted ? (
         <form onSubmit={handleSubmit}>
           <h2>Enter Your Details</h2>
