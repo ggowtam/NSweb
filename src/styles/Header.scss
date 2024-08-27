@@ -1,0 +1,172 @@
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0); /* Fully transparent initially */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+header.scrolled {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent when scrolled */
+}
+
+.logo {
+  height: 100px;
+  /* Ensure logo aligns to the left */
+  display: flex;
+  align-items: center;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu-toggle div {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  transition: 0.3s;
+}
+
+/* Desktop menu styles */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-menu a,
+.nav-menu .dropdown > span {
+  color: #333;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-menu a:hover,
+.nav-menu .dropdown > span:hover {
+  color: #555;
+}
+
+.nav-menu a::after,
+.nav-menu .dropdown > span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjusted to bring the underline closer */
+  width: 0;
+  height: 2px;
+  background: #333;
+  transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after,
+.nav-menu .dropdown > span:hover::after {
+  width: 100%;
+}
+
+.book-button {
+  background-color: #FFFACD;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.book-button:hover {
+  background-color: #FFEFBA;
+  color: #333;
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #FFFFFF; /* Consistent with header background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure dropdown is above other content */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.dropdown-content.show {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #f5f5f5;
+}
+
+/* Media queries for mobile */
+@media (max-width: 768px) {
+  header {
+    justify-content: space-between; /* Ensure space between logo and menu toggle */
+  }
+
+  .logo {
+    height: 60px; /* Adjust logo size if needed for mobile */
+  }
+
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #FFFFFF; /* Updated to white for consistency */
+    padding: 10px;
+  }
+
+  .nav-menu.mobile.active {
+    display: flex;
+  }
+
+  .nav-menu a {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .nav-menu a:last-child {
+    border-bottom: none;
+  }
+
+  .book-button {
+    margin-top: 10px;
+  }
+}

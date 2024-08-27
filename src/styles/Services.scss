@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@300;400;700&display=swap'); // Elegant and thin serif
+
+// Variables for easier customization
+$primary-color: #baa190; // Bright blue
+$secondary-color: #f8f9fa; // Light grey
+$accent-color: #ff5722; // Warm orange for highlights
+$text-color: #333; // Dark grey for text
+$overlay-color: rgba(0, 0, 0, 0.4); // Dark overlay color for image hover
+$underline-color: #baa190; // Custom underline color
+$transition-speed: 0.3s;
+
+// Reset margin and padding for consistent spacing
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.services-container {
+  padding: 50px;
+  padding-top: 100px; // Adjust this value to create more space at the top
+
+}
+
+.services-title {
+  font-family: 'Nanum Myeongjo', Arial, sans-serif;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.service-item {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform $transition-speed ease, box-shadow $transition-speed ease;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+
+  &:hover .service-image {
+    opacity: 0.7;
+  }
+
+  &:hover .service-overlay {
+    opacity: 1;
+  }
+
+  &:hover .service-content h4 {
+    display: none; // Hide the h4 when the overlay is visible
+  }
+
+  .service-image {
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    transition: opacity $transition-speed ease;
+  }
+
+  .service-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $overlay-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity $transition-speed ease;
+
+    h3 {
+      color: #fff;
+      font-size: 1.6rem;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: 0;
+      padding: 0 15px;
+    }
+  }
+
+  .service-content {
+    padding: 15px;
+    text-align: center;
+
+    h4 {
+      font-size: 1.4rem;
+      color: $text-color;
+      margin: 10px 0;
+      font-weight: 600;
+      text-decoration: underline;
+      text-decoration-color: $underline-color; // Custom underline color
+      transition: display $transition-speed ease;
+    }
+  }
+}
+
+// Responsive design adjustments
+@media (max-width: 768px) {
+  .services-container {
+    padding: 30px;
+    color: #333;
+    padding-top: 100px; // Adjust top padding for mobile view
+  }
+
+  .services-title {
+    font-family: 'Nanum Myeongjo', Arial, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px; // Adjust gap for mobile view
+  }
+}
+
+// Non-clickable item styles
+.non-clickable {
+  cursor: default; // Indicates that the item is not clickable
+  pointer-events: none; // Disables all mouse interactions
+
+  .service-overlay {
+    // Optional: You can adjust overlay styles if needed
+    background: rgba(0, 0, 0, 0.5); // Slightly different overlay color for non-clickable items
+  }
+
+  .service-content h4 {
+    text-decoration: none; // Removes underline if any
+    color: $text-color;
+  }
+}

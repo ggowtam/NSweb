@@ -1,0 +1,112 @@
+/* src/styles/About.scss */
+
+.parallax-container {
+  height: 1000px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.about-content {
+  width: 100%;
+  padding-right: 5%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-text {
+  color: white;
+  text-align: center;
+  max-width: 600px;
+
+  h3 {
+    display: block;
+    font-size: 1.5em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  }
+
+  .view-collection-btn {
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1em;
+    display: inline-block;
+    background: transparent;
+    transition: background 0.3s, color 0.3s;
+
+    &:hover {
+      background: white;
+      color: black;
+    }
+  }
+}
+
+.white-block {
+  background-color: #ffffff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.centered-text {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.2em;
+  line-height: 1.5;
+  display: block;
+  margin-top: 20px;
+
+  strong {
+    font-weight: bold;
+    font-size: 1em;
+  }
+}
+
+.image-gallerya {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+
+  img {
+    width: 300px;
+    margin: 0 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .parallax-container {
+    height: 600px; /* Adjust height for smaller screens */
+  }
+
+  .about-text h3 {
+    font-size: 1.2em; /* Smaller font size */
+  }
+
+  .about-text {
+    padding-right: 10px; /* Reduce padding on small screens */
+  }
+
+  .white-block {
+    padding: 30px 10px; /* Adjust padding for smaller screens */
+  }
+
+  .centered-text {
+    font-size: 1em; /* Smaller font size */
+    line-height: 1.4;
+  }
+
+  .image-gallerya {
+    flex-direction: column; /* Stack images vertically on small screens */
+    img {
+      width: 100%; /* Make images responsive */
+      max-width: 300px; /* Limit maximum width */
+      margin: 10px 0; /* Adjust margins for vertical layout */
+    }
+  }
+}

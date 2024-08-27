@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+.pre-wedding-shoot-container {
+  font-family: 'Nanum Myeongjo', serif;
+  color: #333;
+  text-align: center;
+  padding: 40px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+
+  .shoot-hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+
+    .shoot-title {
+      font-size: 3rem;
+      color: #222;
+      font-weight: bold;
+    }
+
+    .shoot-description {
+      margin: 20px auto;
+      max-width: 800px;
+      font-size: 1.2rem;
+      color: #666;
+      line-height: 1.6;
+    }
+  }
+
+  .shoot-banner {
+    margin: 40px auto;
+    max-width: 100%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  .shoot-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 0;
+    margin-top: 40px;
+
+    .gallery-item {
+      flex: 0 0 auto;
+      margin: 10px;
+      position: relative;
+      overflow: hidden;
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        max-height: 500px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 20px;
+
+    .shoot-banner {
+      max-width: 100%;
+    }
+
+    .shoot-gallery {
+      .gallery-item {
+        max-height: 360px;
+        img {
+          max-height: 360px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .shoot-gallery {
+      .gallery-item {
+        max-height: 240px;
+        img {
+          max-height: 240px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,125 @@
+// src/styles/BaniKarl.scss
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+.bani-karl-page {
+  font-family: 'Nanum Myeongjo', serif;
+  color: #333;
+  text-align: center;
+  padding: 40px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+
+  .bani-karl-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+
+    .title-content {
+      font-size: 3rem;
+      color: #222;
+      font-weight: bold;
+    }
+  }
+
+  .bani-karl-description {
+    margin: 20px auto;
+    max-width: 800px;
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+  }
+
+  .bani-karl-audio {
+    margin: 40px auto;
+    max-width: 600px;
+    position: relative;
+
+    audio {
+      width: 100%;
+      height: 50px; /* Ensure the height is enough to display the controls */
+      border-radius: 5px;
+      background: rgba(186, 161, 144, 0.5); /* Transparent background */
+      border: 1px solid rgba(186, 161, 144, 0.7); /* Border with a semi-transparent version */
+      outline: none;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      display: block;
+      backdrop-filter: blur(5px); /* Optional: Add a blur effect */
+
+      ::-webkit-media-controls-panel {
+        background-color: rgba(186, 161, 144, 0.3); /* Semi-transparent background for the controls */
+      }
+
+      ::-webkit-media-controls-play-button {
+        color: #000;
+        background-color: rgba(186, 161, 144, 0.8); /* Slightly less transparent */
+        border-radius: 50%;
+        border: 1px solid #ddd;
+      }
+    }
+  }
+
+  .bani-karl-banner {
+    margin: 40px auto;
+    max-width: 100%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  .bani-karl-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 0;
+    margin-top: 40px;
+
+    .gallery-item {
+      flex: 0 0 auto; /* Prevent the items from shrinking or growing */
+      margin: 10px; /* Space around images */
+      position: relative;
+      overflow: hidden;
+
+      img {
+        display: block;
+        max-width: 100%; /* Ensure image doesn't overflow the container */
+        height: auto; /* Maintain aspect ratio */
+        max-height: 500px; /* Adjust height for smaller images */
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 20px;
+
+    .bani-karl-banner {
+      max-width: 100%;
+    }
+
+    .bani-karl-gallery {
+      .gallery-item {
+        max-height: 360px; /* Larger images for tablet devices */
+        img {
+          max-height: 360px; /* Ensure images are larger on tablets */
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .bani-karl-gallery {
+      .gallery-item {
+        max-height: 240px; /* Larger images for very small screens */
+        img {
+          max-height: 240px; /* Ensure images are larger on small screens */
+        }
+      }
+    }
+  }
+}

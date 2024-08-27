@@ -1,0 +1,171 @@
+.image-overlay-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px; /* Add padding to prevent content from touching the edges */
+    box-sizing: border-box; /* Ensure padding doesn't affect the width */
+  }
+  
+  .preset-image {
+    width: 50%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Optional: add rounded corners to the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+  }
+  
+  .overlay-box {
+    background-color: #baa190;
+    padding: 20px;
+    color: #000;
+    width: 40%;
+    position: absolute;
+    right: -10%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    border-radius: 8px; /* Optional: add rounded corners to the box */
+  }
+  
+  .adobe-jenson {
+    font-family: 'Adobe Jenson', serif;
+    font-style: italic;
+    margin-top: 100px;
+    line-height: 1.5;
+  }
+  
+  .fs-rome {
+    font-family: 'Garamond', serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  .read-more {
+    font-family: 'FS Rome', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 20px;
+  }
+  
+  .additional-text {
+    text-align: center;
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+  
+  .detail-text {
+    font-family: 'Garamond', serif;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .essence-text {
+    font-family: 'Garamond', serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 1.5;
+  }
+  
+  .bold-text {
+    font-weight: bold;
+  }
+  
+  .image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .gallery-image {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .overlay-box {
+        right: -5%;
+        padding: 15px;
+        font-size: 14px;
+        width: 50%; /* Adjust for tablet screens */
+    }
+  
+    .fs-rome {
+        font-size: 24px;
+    }
+  
+    .read-more {
+        font-size: 14px;
+    }
+  
+    .gallery-image {
+        width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .preset-image {
+        width: 60%;
+    }
+  
+    .overlay-box {
+        width: 80%;
+        right: 0;
+        top: 90%; /* Position the overlay box below the image */
+        transform: translateY(0); /* Reset vertical centering */
+        padding: 15px;
+    }
+  
+    .fs-rome {
+        font-size: 20px;
+    }
+  
+    .read-more {
+        font-size: 14px;
+    }
+  
+    .gallery-image {
+        width: 100px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .preset-image {
+        width: 100%;
+    }
+  
+    .overlay-box {
+        width: 100%;
+        right: 0;
+        top: 100%;
+        transform: translateY(0);
+        padding: 10px;
+        font-size: 12px; /* Reduce font size for small screens */
+    }
+  
+    .fs-rome {
+        font-size: 16px;
+    }
+  
+    .read-more {
+        font-size: 12px;
+    }
+  
+    .gallery-image {
+        width: 80px;
+    }
+  }
+  

@@ -1,0 +1,128 @@
+.footer {
+  padding: 20px;
+  background-color: #edeadf;
+  font-family: 'Goudy Old Style', serif; /* Set font for the entire footer */
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+}
+
+.logo {
+  max-width: 300px; /* Increased size */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.links-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px 20px; /* Adjust spacing between columns and rows */
+}
+
+.links-grid ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links-grid li {
+  margin-bottom: 10px;
+}
+
+/* Change the color of all links in the footer to black */
+.footer-links a {
+  color: black; /* Set link color to black */
+  text-decoration: none; /* Remove underline */
+}
+
+.footer-links a:hover {
+  color: #333; /* Slightly different color on hover */
+}
+
+.footer-divider {
+  height: 100px;
+  width: 1px;
+  background-color: #ccc;
+  margin: 0 20px;
+}
+
+.footer-social {
+  padding-bottom: 6%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -20px; /* Move the section upwards */
+}
+
+.footer-social h4 {
+  margin-bottom: 10px; /* Space above social icons */
+}
+
+/* Change the color of social icons to black */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons i {
+  font-size: 24px;
+  color: black; /* Set social icons color to black */
+  transition: color 0.3s;
+}
+
+.social-icons a:hover i {
+  color: #333; /* Slightly different color on hover */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  text-transform: uppercase; /* Convert text to uppercase */
+}
+
+.footer-bottom hr {
+  margin: 10px 0;
+}
+
+/* Style for the "WEBSITE BY Gowtam" text */
+.footer-bottom a {
+  color: black; /* Set text color to black */
+  text-decoration: none; /* Remove underline */
+}
+
+.footer-bottom a:hover {
+  color: #333; /* Slightly different color on hover */
+}
+
+/* Center "Book Appointment" in mobile view */
+@media (max-width: 768px) {
+  .footer-links {
+    text-align: center;
+  }
+
+  .links-grid {
+    grid-template-columns: 1fr;
+  }
+}

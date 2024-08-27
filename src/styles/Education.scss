@@ -1,0 +1,111 @@
+/* src/styles/Education.scss */
+
+.education-page {
+  font-family: 'Goudy Old Style', serif;
+  padding: 20px;
+  margin-top: 100px; /* Adjust this value to push the content down */
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 0; /* Remove space between blocks */
+}
+
+.block-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.block-text {
+  flex: 1;
+}
+
+.block-text h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.block-text p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.block-image {
+  flex: 1;
+  text-align: right;
+}
+
+.block-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.block-1 {
+  background-color: #edeadf;
+}
+
+.block-2 {
+  background-color: #baa190;
+  color: #fff;
+}
+
+.block-2 .book-now {
+  display: inline-block;
+  background-color: #232323;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.block-2 .arrow {
+  font-size: 18px;
+}
+
+.block-3 {
+  background-color: #6c4231;
+  color: #fff;
+}
+
+.block-4 {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.block-4 .view-all {
+  display: inline-block;
+  background-color: #232323;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.preset-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.preset-item {
+  text-align: center;
+}
+
+.preset-item img {
+  max-width: 100px;
+  height: auto;
+}
+
+.preset-item p {
+  font-size: 14px;
+  margin-top: 5px;
+}

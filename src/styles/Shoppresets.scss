@@ -1,0 +1,290 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+  .presets-page {
+    font-family: 'Goudy Old Style', serif;
+    position: relative; // For darkening background
+    padding-top: 100px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .shop-header {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .category-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      background: none;
+      border: none;
+      color: black;
+      font-family: 'Goudy Old Style', serif;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 0 10px;
+      position: relative;
+      padding: 5px;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #eae7dc;
+      }
+
+      &::after {
+        content: '•';
+        position: absolute;
+        right: -15px;
+        color: black;
+      }
+
+      &:last-child::after {
+        content: '';
+      }
+    }
+  }
+
+  .preset-gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    .preset-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px; // Increased gap for larger items
+      margin-bottom: 20px;
+
+      .preset-item {
+        position: relative;
+        flex: 1 1 calc(33.33% - 20px); // Increased size to fit larger items
+        max-width: 300px; // Increased max width
+        text-align: center;
+        cursor: pointer;
+        transition: transform 0.3s;
+
+        img {
+          width: 100%;
+          height: auto;
+          max-width: 100%; // Ensure image scales properly
+        }
+
+        p {
+          margin-top: 10px;
+          font-size: 18px; // Increased font size
+        }
+
+        .quick-view {
+          display: none;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background: rgba(0, 0, 0, 0.7);
+          color: white;
+          padding: 15px 30px; // Increased padding
+          border-radius: 5px;
+          font-size: 16px; // Increased font size
+          cursor: pointer;
+          z-index: 10; // Ensure it appears above the image
+        }
+
+        &:hover .quick-view {
+          display: block;
+        }
+      }
+    }
+
+    .additional-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px; // Increased gap for larger items
+      margin: 20px 0;
+
+      .additional-item {
+        position: relative;
+        flex: 1 1 calc(33.33% - 20px); // Increased size to fit larger items
+        max-width: 200px; // Increased max width
+        text-align: center;
+
+        img {
+          width: 100%;
+          height: auto;
+          max-width: 100%; // Ensure image scales properly
+        }
+
+        p {
+          margin-top: 10px;
+          font-size: 16px; // Increased font size
+        }
+
+        .quick-view {
+          display: none;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background: rgba(0, 0, 0, 0.7);
+          color: white;
+          padding: 10px 20px; // Increased padding
+          border-radius: 5px;
+          font-size: 14px; // Increased font size
+          cursor: pointer;
+          z-index: 10; // Ensure it appears above the image
+        }
+
+        &:hover .quick-view {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .promo-banner {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    background: url('../assets/promo-banner.jpg') no-repeat center center;
+    background-size: cover;
+
+    .promo-text {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: white;
+      font-size: 2rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .detail-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+
+    &.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .close-card {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: #333;
+    }
+
+    .card-content {
+      display: flex;
+      gap: 20px;
+
+      img {
+        width: 200px;
+        height: auto;
+        max-width: 100%;
+      }
+
+      .card-details {
+        max-width: 400px;
+
+        h2 {
+          margin-top: 0;
+        }
+
+        p {
+          margin: 10px 0;
+        }
+
+        button {
+          background-color: #007bff;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+          font-family: 'Goudy Old Style', serif;
+          font-size: 16px;
+        }
+
+        button:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 900;
+    display: none;
+
+    &.show {
+      display: block;
+    }
+  }
+
+  .parallax-containerp {
+    background: url('../assets/pre1/Prew6.jpg') no-repeat center center;
+
+    .parallax-text {
+      position: relative;
+      left: 40px;
+      top: 50%;
+      text-align: left;
+      transform: translateY(-50%);
+      color: white;
+      font-size: 2rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .parallax-containerp {
+      height: 10px; // Reduced height for mobile
+      background-attachment: scroll; // Disable parallax effect on mobile
+    }
+    .detail-card {
+      width: 90%; // Ensure card fits well on smaller screens
+      padding: 15px; // Adjust padding for smaller screens
+    }
+    .parallax-text {
+      font-size: 1.5rem; // Reduced font size for mobile
+    }
+  }
+
+  @media (max-width: 480px) {
+    .parallax-text {
+      font-size: 1rem; // Further reduced font size for very small screens
+    }
+  }

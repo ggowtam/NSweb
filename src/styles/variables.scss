@@ -1,0 +1,16 @@
+// Colors
+$primary-color: #ff4a57;
+$secondary-color: #333;
+$text-color: #fff;
+$background-color: #f7f7f7;
+
+// Dimensions
+$border-radius: 12px;
+$shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+$transition-speed: 0.3s;
+
+// Mixins (optional, add if you use them)
+@mixin grid($columns) {
+  display: grid;
+  grid-template-columns: $columns;
+}
