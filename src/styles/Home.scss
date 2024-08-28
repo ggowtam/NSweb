@@ -239,7 +239,10 @@
     flex-direction: column; /* Stack elements vertically */
     align-items: center;
   }
-
+  .overlay-content h1 {
+    font-size: 2.5em;
+    margin: 0;
+  }
   .center {
     width: 100%;
     margin-bottom: 20px; /* Add space below the logo */

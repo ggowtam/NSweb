@@ -32,13 +32,13 @@ const Footer = () => {
           <div className="footer-social">
             <h4>Follow Us</h4>
             <div className="social-icons">
-              <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/the_n.s.creation_films/" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/people/The-NSCreation-Films/61563044004833/" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-facebook"></i>
               </a>
-              <a href="https://www.youtube.com/yourprofile" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.youtube.com/@then.s.creationfilms" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-youtube"></i>
               </a>
             </div>
