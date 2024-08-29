@@ -1,0 +1,127 @@
+.fashion-shoots-container {
+  .hero-section {
+    text-align: center;
+    padding-top: 80px;
+  }
+
+  .gallery-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .gallery-item.small {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+
+  .gallery-item.medium {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+
+  .gallery-item.large {
+    grid-row: span 3;
+    grid-column: span 3;
+  }
+
+  @media (max-width: 768px) {
+    .gallery-grid {
+      padding-left: 20px;
+      align-items: center;
+    }
+
+    .gallery-item.medium,
+    .gallery-item.large {
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .gallery-grid {
+      justify-items: center; /* Center items horizontally */
+      align-items: center;
+    }
+
+    .gallery-item {
+      justify-self: center; /* Center each item individually */
+    }
+
+    .gallery-item img {
+      height: auto;
+    }
+  }
+
+  .audio {
+    margin: 40px auto;
+    width: 800px; /* Default width for larger screens */
+    position: relative;
+
+    audio {
+      width: 100%;
+      height: 50px; /* Ensure the height is enough to display the controls */
+      border-radius: 5px;
+      background: rgba(186, 161, 144, 0.5); /* Transparent background */
+      border: 1px solid rgba(186, 161, 144, 0.7); /* Border with a semi-transparent version */
+      outline: none;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      display: block;
+      backdrop-filter: blur(5px); /* Optional: Add a blur effect */
+
+      ::-webkit-media-controls-panel {
+        background-color: rgba(186, 161, 144, 0.3); /* Semi-transparent background for the controls */
+      }
+
+      ::-webkit-media-controls-play-button {
+        color: #000;
+        background-color: rgba(186, 161, 144, 0.8); /* Slightly less transparent */
+        border-radius: 50%;
+        border: 1px solid #ddd;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .audio {
+      width: 90%; /* Adjust width for tablets and small laptops */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .audio {
+      width: 100%; /* Full width for mobile devices */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .audio {
+      width: 100%; /* Full width for smaller mobile devices */
+    }
+  }
+}

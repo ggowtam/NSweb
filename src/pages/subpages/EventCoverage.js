@@ -1,22 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link
 import '../../styles/EventCoverage.scss'; // Import SCSS
-import presetImage1 from '../../assets/preset1.jpg';
-import presetImage2 from '../../assets/preset2.jpg';
+import presetImage1 from '../../assets/Event/Event1.jpg';
+import presetImage2 from '../../assets/Event/Event27.jpg';
 import presetImage3 from '../../assets/preset3.jpg';
 
 const eventCoverageProjects = [
   {
-    title: 'Corporate Event 1',
+    title: 'Jazzy B',
     description: 'This event coverage captures the energy and professionalism of a high-profile corporate event. The images reflect the dynamic environment and interactions of the participants.',
     image: presetImage1,
-    path: '/event-coverage/corporate-event-1',
+    path: '/events/event1',
   },
   {
-    title: 'Charity Gala 2023',
+    title: 'Miss Pooja',
     description: 'A beautiful portrayal of a charity gala, capturing the elegance and generosity of the attendees. The photos highlight the joy and success of the event.',
     image: presetImage2,
-    path: '/event-coverage/charity-gala-2023',
+    path: '/events/event2',
   },
   {
     title: 'Product Launch Event',

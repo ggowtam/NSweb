@@ -7,7 +7,7 @@ import presetImage3 from '../../assets/preset3.jpg';
 
 const prePostWeddingProjects = [
   {
-    title: 'Pre Wedding Shoot 1',
+    title: 'Gurwinder + Navneet',
     description: 'This pre-wedding shoot captures the excitement and anticipation leading up to the big day. The images reflect the genuine emotions and connection between the couple.',
     image: prew6,
     path: '/preweddings/pre-wedding-shoot-1',

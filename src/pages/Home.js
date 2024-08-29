@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import videoSrc from '../assets/cinematic film.webm'; // Updated video source to .webm format
+import { Parallax } from 'react-parallax';
+import parallaxImage1 from '../assets/para3.jpg';
 import logo2 from '../assets/logo2.png';
 import Home1 from '../assets/Home1.jpg';
 import Home2 from '../assets/Home2.jpg';
@@ -111,6 +113,23 @@ const Home = () => {
 
     
       </div>
+      <Parallax className="parallax-container" bgImage={parallaxImage1} strength={500}>
+      <div className="about-content">
+        <div className="about-text">
+          <h3>
+            text <br/>
+           . <br/>
+            .
+          </h3>
+          <p>
+            . <br/>
+            . <br/>
+            .
+          </p>
+        
+        </div>
+      </div>
+    </Parallax>
     </div>
   );
 };

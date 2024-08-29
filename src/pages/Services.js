@@ -1,6 +1,8 @@
 // src/pages/Services.js
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Parallax } from 'react-parallax';
+import parallaxImage1 from '../assets/para1.jpg';
 import '../styles/Services.scss';
 import Homepic from '../assets/Homepic.jpg';
 import Home1 from '../assets/Home1.jpg';
@@ -56,9 +58,32 @@ const Services = () => {
             <h4>Others</h4>
           </div>
         </Link>
+        
+      </div>
+      <div>
+      <Parallax className="parallax-container" bgImage={parallaxImage1} strength={500}>
+      <div className="about-content">
+        <div className="about-text">
+          <h3>
+            text <br/>
+           . <br/>
+            .
+          </h3>
+          <p>
+            . <br/>
+            . <br/>
+            .
+          </p>
+        
+        </div>
+      </div>
+    </Parallax>
       </div>
     </div>
+    
+    
   );
+ 
 };
 
 export default Services;

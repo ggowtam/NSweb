@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import '../styles/Header.scss'; // Assuming your header styles are in Header.scss
 
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -18,6 +22,7 @@ const Header = () => {
   const handleLinkClick = () => {
     setMenuOpen(false);       // Close the main menu if it's open
     setDropdownOpen(false);   // Close the dropdown menu
+    scrollToTop();            // Scroll to the top of the page
   };
 
   // Add scroll effect for header transparency

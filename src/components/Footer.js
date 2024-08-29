@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png'; // Adjust this path if needed
 import '../styles/Footer.scss'; // Import the CSS for styling
 
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -15,16 +19,16 @@ const Footer = () => {
             <h4>Quick Links</h4>
             <div className="links-grid">
               <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/services">Services</Link></li>
-                {/* <li><Link to="/lovenotes">Love Notes</Link></li> */}
-                <li><Link to="/education">Education</Link></li>
+                <li><Link to="/" onClick={scrollToTop}>Home</Link></li>
+                <li><Link to="/services" onClick={scrollToTop}>Services</Link></li>
+                {/* <li><Link to="/lovenotes" onClick={scrollToTop}>Love Notes</Link></li> */}
+                <li><Link to="/education" onClick={scrollToTop}>Education</Link></li>
               </ul>
               <ul>
-                <li><Link to="/presets">Presets</Link></li>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/contact">Contact</Link></li>
-                <li><Link to="/book">Book Appointment</Link></li>
+                <li><Link to="/presets" onClick={scrollToTop}>Presets</Link></li>
+                <li><Link to="/about" onClick={scrollToTop}>About</Link></li>
+                <li><Link to="/contact" onClick={scrollToTop}>Contact</Link></li>
+                <li><Link to="/book" onClick={scrollToTop}>Book Appointment</Link></li>
               </ul>
             </div>
           </div>

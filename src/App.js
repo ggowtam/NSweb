@@ -27,7 +27,16 @@ import Weddings from './pages/subpages/Weddings';
 import PrePostWeddings from './pages/subpages/PrePostWeddings';
 import EventCoverage from './pages/subpages/EventCoverage';
 import FashionShoots from './pages/subpages/FashionShoots';
+import Fashion1 from './pages/subpages/Fashion/Fashionshoot';
+import Fashion2 from './pages/subpages/Fashion/Fashionshoot2';
+import Fashion3 from './pages/subpages/Fashion/Fashionshoot3';
+import Event1 from './pages/subpages/Events/Event1';
+import Event2 from './pages/subpages/Events/Event2';
+
+
+
 import PreWeddingShoot1 from './pages/subpages/Preweddings/PreWeddingShoot1';
+
 import SlideOutCart from './components/SlideOutCart';
 
 function App() {
@@ -68,6 +77,15 @@ function App() {
         <Route path="/weddings/bani-karl" element={<BaniKarl />} />
         <Route path="/services/others" element={<Others />} />
         <Route path="/preweddings/pre-wedding-shoot-1" element={<PreWeddingShoot1 />} />
+        <Route path="/fashion/fashion-shoot-1" element={<Fashion1 />} />
+        <Route path="/fashion/fashion-shoot-2" element={<Fashion2 />} />
+        <Route path="/fashion/fashion-shoot-3" element={<Fashion3 />} />
+        <Route path="/fashion/fashion-shoot-1" element={<Fashion1 />} />
+        <Route path="/events/event1" element={<Event1 />} />
+        <Route path="/events/event2" element={<Event2 />} />
+
+
+
       </Routes>
       <Footer />
       <SlideOutCart isOpen={isCartOpen} setOpen={setCartOpen} />
