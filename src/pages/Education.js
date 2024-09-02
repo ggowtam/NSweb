@@ -1,10 +1,13 @@
 // src/pages/Education.js
 import React from 'react';
 import '../styles/Education.scss'; // Import the CSS file for styling
-import coachingImage from '../assets/logo.png'; // Adjust the image path
 import coachingCallImage from '../assets/logo.png'; // Adjust the image path
 import liveMentorshipImage from '../assets/logo.png'; // Adjust the image path
 import presetsImage from '../assets/logo.png'; // Adjust the image path
+import Nw from '../assets/Nw.jpg'; // Adjust the image path
+import Nw1 from '../assets/Nw1.jpg'; // Adjust the image path
+import Nw2 from '../assets/Nw2.jpg'; // Adjust the image path
+
 
 const Education = () => {
   return (
@@ -19,7 +22,7 @@ const Education = () => {
             </p>
           </div>
           <div className="block-image">
-            <img src={coachingImage} alt="Coaching" />
+            <img  className="nw" src={Nw} alt="Coaching" />
           </div>
         </div>
       </div>
@@ -27,7 +30,7 @@ const Education = () => {
       {/* 2nd Block */}
       <div className="block block-2">
         <div className="block-image">
-          <img src={coachingCallImage} alt="Coaching Call" />
+          <img className="nw" src={Nw1} alt="Coaching Call" />
         </div>
         <div className="block-text">
           <h2>1:1 Coaching Call</h2>
@@ -56,7 +59,7 @@ const Education = () => {
           </p>
         </div>
         <div className="block-image">
-          <img src={liveMentorshipImage} alt="Live Mentorship" />
+          <img className="nw" src={Nw2} alt="Live Mentorship" />
         </div>
       </div>
 

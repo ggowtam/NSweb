@@ -51,7 +51,7 @@ const Footer = () => {
       </div>
       <div className="footer-bottom">
         <hr />
-        <p>© 2024 THE N.S.CREATION FILMS | <a href="https://ggowtam.github.io/Gowtam-s-Portfolio/" target="_blank" rel="noopener noreferrer">WEBSITE BY Gowtam</a></p>
+        <p>© 2024 THE N.S.CREATION FILMS</p>
       </div>
     </footer>
   );

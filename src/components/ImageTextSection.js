@@ -16,18 +16,26 @@ import Home13 from '../assets/Home13.jpg';
 import Home14 from '../assets/Home14.jpg';
 import Home15 from '../assets/Home15.jpg';
 import Home16 from '../assets/Home16.jpg';
-import Home17 from '../assets/Home17.jpg';
-
+import Home17 from '../assets/Home16.jpg';
+import Home18 from '../assets/Home17.jpg';
+import Home19 from '../assets/Home17.jpg';
+import Home20 from '../assets/Home17.jpg';
+import Home21 from '../assets/Home17.jpg';
+import Home22 from '../assets/Home17.jpg';
+import Home23 from '../assets/Home17.jpg';
 
 const imgArray = [
   Home7,
   Home8,
+  Home22,
   Home9,
   Home16,
+  Home18,
   Home10,
   Home11,
   Home12,
   Home1,
+  Home23,
   Home2,
   Home3,
   Home4,
@@ -37,6 +45,9 @@ const imgArray = [
   Home13,
   Home15,
   Home17,
+  Home19,
+  Home20,
+  Home21,
 ];
 
 const ImageSection = () => {
@@ -45,16 +56,17 @@ const ImageSection = () => {
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setIsTransitioning(true);
       setActiveIndex((prevIndex) => {
-        if (prevIndex === imgArray.length - 4) {
-          setTimeout(() => {
-            setIsTransitioning(false);
-            setActiveIndex(0);
-          }, 500); // Set the transition duration in ms
+        // Check if we are at the last cloned image (where loop should reset)
+        if (prevIndex === imgArray.length) {
+          // Temporarily disable transition for instant jump
+          setIsTransitioning(false);
+          return 0;
+        } else {
+          // Enable transition for smooth sliding
+          setIsTransitioning(true);
           return prevIndex + 1;
         }
-        return prevIndex + 1;
       });
     }, 2000); // Auto slide every 2 seconds
 
@@ -76,7 +88,7 @@ const ImageSection = () => {
         <div
           className={`gallery-display ${isTransitioning ? 'transition' : ''}`}
           style={{
-            transform: `translateX(-${activeIndex * 25}%)`,
+            transform: `translateX(-${activeIndex * 26}%)`,
           }}
         >
           {imgArray.concat(imgArray.slice(0, 4)).map((img, idx) => (

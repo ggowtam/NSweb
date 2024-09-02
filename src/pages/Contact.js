@@ -1,7 +1,7 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import '../styles/Contact.scss'; // Import the CSS file for styling
-import contactImage from '../assets/contact.png'; // Import the PNG image
+import contactImage from '../assets/letter.png'; // Import the PNG image
 
 const Contact = () => {
   const [state, handleSubmit] = useForm("mzzprnvg");

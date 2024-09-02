@@ -1,22 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link
 import '../../styles/Weddings.scss'; // Import SCSS
-import presetImage1 from '../../assets/preset1.jpg';
-import presetImage2 from '../../assets/preset2.jpg';
+import wed1 from '../../assets/wed/wed1.jpg';
+import wed13 from '../../assets/wed/wed13.jpg';
 import presetImage3 from '../../assets/preset3.jpg';
 
 const weddingProjects = [
   {
-    title: 'Bani + Karl',
+    title: 'Gurwinder + Navneet',
     description: 'This dream wedding captures the true emotion and personalities expressed through the lens of our camera. This elegant, timeless wedding truly reflects our photographic style of elegant, organic and nostalgic photography.',
-    image: presetImage1,
-    path: '/weddings/bani-karl',
+    image: wed1,
+    path: '/Weddings/wed1',
   },
   {
-    title: 'Harleen + Paul',
+    title: 'Rupin + Samriti',
     description: 'Capturing the essence of this elegant and timeless wedding was a seamless endeavor, as it effortlessly evoked genuine emotions and true love. We skillfully preserved the fleeting yet priceless moments of the ceremony, reflecting our signature style of timeless cinematic photography.',
-    image: presetImage2,
-    path: '/weddings/harleen-paul',
+    image: wed13,
+    path: '/Weddings/wed2',
   },
   {
     title: 'Annie + Ripan',

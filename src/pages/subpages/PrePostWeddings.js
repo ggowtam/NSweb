@@ -2,8 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../styles/PrePostWeddings.scss';
 import prew6 from '../../assets/pre1/Prew6.jpg';
-import presetImage2 from '../../assets/preset2.jpg';
-import presetImage3 from '../../assets/preset3.jpg';
+import pre20 from '../../assets/pre2/pre20.jpg'
+import pre47 from '../../assets/pre3/pre47.jpg'
+import pre94 from '../../assets/pre4/pre94.jpg'
+import pre108 from '../../assets/pre5/pre108.jpg'
+
+
 
 const prePostWeddingProjects = [
   {
@@ -13,17 +17,24 @@ const prePostWeddingProjects = [
     path: '/preweddings/pre-wedding-shoot-1',
   },
   {
-    title: 'Post Wedding Shoot 1',
+    title: 'Dinesh + Veenu',
     description: 'This post-wedding shoot highlights the beauty and joy experienced after the wedding day. The photographs showcase the couple in a relaxed and celebratory setting.',
-    image: presetImage2,
-    path: '/pre-post-weddings/shoot-2',
+    image: pre20,
+    path: '/preweddings/pre-wedding-shoot-2',
   },
   {
-    title: 'Pre/Post Wedding Shoot 2',
+    title: 'Aditya + AARTI',
     description: 'A blend of pre and post-wedding moments, this shoot captures the essence of the couple’s journey from anticipation to celebration with candid and artistic photography.',
-    image: presetImage3,
-    path: '/pre-post-weddings/shoot-3',
+    image: pre47,
+    path: '/preweddings/pre-wedding-shoot-3',
   },
+  {
+    title: 'Navjot + Balvinder',
+    description: 'A blend of pre and post-wedding moments, this shoot captures the essence of the couple’s journey from anticipation to celebration with candid and artistic photography.',
+    image: pre94,
+    path: '/preweddings/pre-wedding-shoot-4',
+  },
+
 ];
 
 const PrePostWeddings = () => (

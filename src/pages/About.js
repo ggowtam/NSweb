@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Parallax } from 'react-parallax';
 import parallaxImage1 from '../assets/para2.jpg';
-import presetImage1 from '../assets/preset1.jpg';
-import presetImage2 from '../assets/preset2.jpg';
-import presetImage3 from '../assets/preset3.jpg';
+import presetImage1 from '../assets/Home19.jpg';
+import presetImage2 from '../assets/Home14.jpg';
+import presetImage3 from '../assets/Home6.jpg';
 import '../styles/About.scss';
 
 const About = () => (

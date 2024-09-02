@@ -13,6 +13,18 @@ import Event10 from '../../../assets/Event/Event10.jpg';
 import Event11 from '../../../assets/Event/Event11.jpg';
 import Event12 from '../../../assets/Event/Event12.jpg';
 import Event13 from '../../../assets/Event/Event13.jpg';
+import Event45 from '../../../assets/Event/Event45.jpg';
+import Event46 from '../../../assets/Event/Event46.jpg';
+import Event47 from '../../../assets/Event/Event47.jpg';
+import Event48 from '../../../assets/Event/Event48.jpg';
+import Event49 from '../../../assets/Event/Event49.jpg';
+import Event50 from '../../../assets/Event/Event50.jpg';
+import Event51 from '../../../assets/Event/Event51.jpg';
+import Event52 from '../../../assets/Event/Event52.jpg';
+import Event53 from '../../../assets/Event/Event53.jpg';
+import Event54 from '../../../assets/Event/Event54.jpg';
+import Event55 from '../../../assets/Event/Event55.jpg';
+
 
 const fashionShowImages = [
     Event1,
@@ -28,6 +40,17 @@ const fashionShowImages = [
     Event11,
     Event12,
     Event13,
+    Event45,
+    Event46,
+    Event47,
+    Event48,
+    Event49,
+    Event50,
+    Event51,
+    Event52,
+    Event53,
+    Event54,
+    Event55,
   
 ];
 
@@ -38,10 +61,19 @@ const fixedSizeClasses = [
   'medium',  // for the third image
   'small',   // for the fourth image
   'large',   // for the fifth image
-  'medium',  // for the sixth image
+  'small',  // for the sixth image
   'small',   // for the seventh image
-  'medium',  // for the eighth image
-  'large'    // for the ninth image
+  'small',  // for the eighth image
+  'large',    // for the ninth image
+  'large',   // for the first image
+  'small',   // for the second image
+  'medium',  // for the third image
+  'small',   // for the fourth image
+  'large',   // for the fifth image
+  'small',  // for the sixth image
+  'small',   // for the seventh image
+  'small',  // for the eighth image
+  'large',
 ];
 
 const FashionShoots = () => (

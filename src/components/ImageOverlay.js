@@ -5,6 +5,9 @@ import '../styles/ImageOverlay.css'; // We'll add styling here
 const ImageOverlay = ({ imageSrc, altText, overlayText, overlayTitle, linkText, linkTo }) => {
   const navigate = useNavigate();
 
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
   return (
     <div className="image-overlay-container">
       <img src={imageSrc} alt={altText} className="preset-image" />
@@ -17,8 +20,8 @@ const ImageOverlay = ({ imageSrc, altText, overlayText, overlayTitle, linkText, 
           LOVE FROM<br />
           THE SOUL
         </p>
-        <p className="read-more" onClick={() => navigate(linkTo)}>
-          {linkText}
+        <p className="read-more" onClick={() => { navigate("/services"); scrollToTop(); }}>
+        {linkText}
         </p>
       </div>
     </div>

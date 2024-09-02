@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'; // Import Link
 import '../../styles/EventCoverage.scss'; // Import SCSS
 import presetImage1 from '../../assets/Event/Event1.jpg';
 import presetImage2 from '../../assets/Event/Event27.jpg';
-import presetImage3 from '../../assets/preset3.jpg';
+import presetImage3 from '../../assets/Event/Event30.jpg';
 
 const eventCoverageProjects = [
   {
@@ -19,10 +19,10 @@ const eventCoverageProjects = [
     path: '/events/event2',
   },
   {
-    title: 'Product Launch Event',
+    title: 'G Sidhu',
     description: 'The product launch event is showcased with vibrant and engaging photographs, reflecting the excitement and anticipation surrounding the new product.',
     image: presetImage3,
-    path: '/event-coverage/product-launch',
+    path: '/events/event3',
   },
 ];
 

@@ -5,23 +5,27 @@ import { Parallax } from 'react-parallax';
 import parallaxImage1 from '../assets/para1.jpg';
 import '../styles/Services.scss';
 import Homepic from '../assets/Homepic.jpg';
-import Home1 from '../assets/Home1.jpg';
+import pre3 from '../assets/pre1/pre3.jpg';
 import Home4 from '../assets/Home4.jpg';
+import Home8 from '../assets/Home8.jpg';
 import Event from '../assets/Event.jpg';
 import adfilm from '../assets/Adfilm.jpg';
 import others from '../assets/Others.png';
+import { MdPadding } from 'react-icons/md';
 
 const serviceItems = [
   { name: 'Weddings', image: Homepic, path: '/services/weddings' },
-  { name: 'Pre & Post Weddings', image: Home1, path: '/services/pre-post-weddings' },
+  { name: 'Pre & Post Weddings', image: pre3, path: '/services/pre-post-weddings' },
+  { name: 'Cinematics', image: Home8, path: '/services/cinematics' },
   { name: 'Event Coverage', image: Event, path: '/services/event-coverage' },
   { name: 'Fashion Shoots', image: Home4, path: '/services/fashion-shoots' },
   { name: 'Ad Films', image: adfilm, path: '/services/ad-films' },
+
 ];
 
 const Services = () => {
   const mainServices = serviceItems.filter(item => 
-    ['Weddings', 'Pre & Post Weddings', 'Event Coverage', 'Fashion Shoots', 'Ad Films'].includes(item.name)
+    ['Weddings', 'Pre & Post Weddings', 'Cinematics', 'Event Coverage', 'Fashion Shoots', 'Ad Films'].includes(item.name)
   );
 
   return (
@@ -62,21 +66,8 @@ const Services = () => {
       </div>
       <div>
       <Parallax className="parallax-container" bgImage={parallaxImage1} strength={500}>
-      <div className="about-content">
-        <div className="about-text">
-          <h3>
-            text <br/>
-           . <br/>
-            .
-          </h3>
-          <p>
-            . <br/>
-            . <br/>
-            .
-          </p>
-        
-        </div>
-      </div>
+      
+      
     </Parallax>
       </div>
     </div>

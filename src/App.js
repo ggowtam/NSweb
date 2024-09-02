@@ -20,8 +20,9 @@ import ThankYou from './pages/ThankYou';
 import Services from './pages/Services';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import BaniKarl from './pages/subpages/weddings/BaniKarl';
 import AdFilms from './pages/subpages/AdFilms';
+import Cinematics from './pages/subpages/Cinematics';
+
 import Others from './pages/Others';
 import Weddings from './pages/subpages/Weddings';
 import PrePostWeddings from './pages/subpages/PrePostWeddings';
@@ -32,10 +33,20 @@ import Fashion2 from './pages/subpages/Fashion/Fashionshoot2';
 import Fashion3 from './pages/subpages/Fashion/Fashionshoot3';
 import Event1 from './pages/subpages/Events/Event1';
 import Event2 from './pages/subpages/Events/Event2';
+import Event3 from './pages/subpages/Events/Event3';
+
+import Wed1 from './pages/subpages/weddings/Wed1';
+import Wed2 from './pages/subpages/weddings/Wed2';
 
 
 
 import PreWeddingShoot1 from './pages/subpages/Preweddings/PreWeddingShoot1';
+import PreWeddingShoot2 from './pages/subpages/Preweddings/PreWeddingShoot2';
+import PreWeddingShoot3 from './pages/subpages/Preweddings/PreWeddingShoot3';
+import PreWeddingShoot4 from './pages/subpages/Preweddings/PreWeddingShoot4';
+import PreWeddingShoot5 from './pages/subpages/Preweddings/PreWeddingShoot5';
+
+
 
 import SlideOutCart from './components/SlideOutCart';
 
@@ -73,16 +84,26 @@ function App() {
         <Route path="/services/pre-post-weddings" element={<PrePostWeddings />} />
         <Route path="/services/event-coverage" element={<EventCoverage />} />
         <Route path="/services/ad-films" element={<AdFilms />} />
+        <Route path="/services/cinematics" element={<Cinematics />} />
+
         <Route path="/services/fashion-shoots" element={<FashionShoots />} />
-        <Route path="/weddings/bani-karl" element={<BaniKarl />} />
         <Route path="/services/others" element={<Others />} />
         <Route path="/preweddings/pre-wedding-shoot-1" element={<PreWeddingShoot1 />} />
+        <Route path="/preweddings/pre-wedding-shoot-2" element={<PreWeddingShoot2 />} />
+        <Route path="/preweddings/pre-wedding-shoot-3" element={<PreWeddingShoot3 />} />
+        <Route path="/preweddings/pre-wedding-shoot-4" element={<PreWeddingShoot4 />} />
+        <Route path="/preweddings/pre-wedding-shoot-5" element={<PreWeddingShoot5 />} />
+        <Route path="/weddings/Wed1" element={<Wed1 />} />
+        <Route path="/weddings/Wed2" element={<Wed2 />} />
+
+
+
         <Route path="/fashion/fashion-shoot-1" element={<Fashion1 />} />
         <Route path="/fashion/fashion-shoot-2" element={<Fashion2 />} />
         <Route path="/fashion/fashion-shoot-3" element={<Fashion3 />} />
-        <Route path="/fashion/fashion-shoot-1" element={<Fashion1 />} />
         <Route path="/events/event1" element={<Event1 />} />
         <Route path="/events/event2" element={<Event2 />} />
+        <Route path="/events/event3" element={<Event3 />} />
 
 
 

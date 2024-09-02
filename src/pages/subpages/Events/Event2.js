@@ -37,10 +37,19 @@ const fixedSizeClasses = [
   'medium',  // for the third image
   'small',   // for the fourth image
   'large',   // for the fifth image
-  'medium',  // for the sixth image
+  'small',  // for the sixth image
   'small',   // for the seventh image
-  'medium',  // for the eighth image
-  'large'    // for the ninth image
+  'small',  // for the eighth image
+  'large',    // for the ninth image
+  'large',   // for the first image
+  'small',   // for the second image
+  'medium',  // for the third image
+  'small',   // for the fourth image
+  'large',   // for the fifth image
+  'small',  // for the sixth image
+  'small',   // for the seventh image
+  'small',  // for the eighth image
+  'large',
 ];
 
 const FashionShoots = () => (

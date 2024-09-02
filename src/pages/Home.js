@@ -3,9 +3,12 @@ import videoSrc from '../assets/cinematic film.webm'; // Updated video source to
 import { Parallax } from 'react-parallax';
 import parallaxImage1 from '../assets/para3.jpg';
 import logo2 from '../assets/logo2.png';
-import Home1 from '../assets/Home1.jpg';
+
 import Home2 from '../assets/Home2.jpg';
-import Home3 from '../assets/Home3.jpg';
+import pre15 from '../assets/pre2/pre15.jpg';
+import pre93 from '../assets/pre4/pre93.jpg';
+
+import pre17 from '../assets/pre2/pre17.jpg';
 import Home4 from '../assets/Home4.jpg';
 import Home5 from '../assets/Home5.jpg';
 import Home6 from '../assets/Home6.jpg';
@@ -86,7 +89,7 @@ const Home = () => {
 
         <div className="text-container">
           <div className="text-content">
-            <h2>
+            <h2 className="adobe-jenson">
               With an eye for detail and our timeless cinematic style, <br />
               it’s vital to us that we tell your story through a lens that
             </h2>
@@ -97,9 +100,9 @@ const Home = () => {
           </div>
 
           <div className="image-grid">
-            <img src={Home1} alt="Preset 1" className="image-item image-left" />
+            <img src={pre17} alt="Preset 1" className="image-item image-left" />
             <img src={Home2} alt="Preset 2" className="image-item image-middle-left" />
-            <img src={Home3} alt="Preset 3" className="image-item image-center" />
+            <img src={pre93} alt="Preset 3" className="image-item image-center" />
             <img src={Home4} alt="Preset 4" className="image-item image-middle-right" />
             <img src={Home5} alt="Preset 5" className="image-item image-right" />
             <img src={Home6} alt="Preset 6" className="image-item image-extra-right" />
@@ -114,21 +117,6 @@ const Home = () => {
     
       </div>
       <Parallax className="parallax-container" bgImage={parallaxImage1} strength={500}>
-      <div className="about-content">
-        <div className="about-text">
-          <h3>
-            text <br/>
-           . <br/>
-            .
-          </h3>
-          <p>
-            . <br/>
-            . <br/>
-            .
-          </p>
-        
-        </div>
-      </div>
     </Parallax>
     </div>
   );

@@ -43,16 +43,25 @@ const fixedSizeClasses = [
   'medium',  // for the third image
   'small',   // for the fourth image
   'large',   // for the fifth image
-  'medium',  // for the sixth image
+  'small',  // for the sixth image
   'small',   // for the seventh image
-  'medium',  // for the eighth image
-  'large'    // for the ninth image
+  'small',  // for the eighth image
+  'large',    // for the ninth image
+  'large',   // for the first image
+  'small',   // for the second image
+  'medium',  // for the third image
+  'small',   // for the fourth image
+  'large',   // for the fifth image
+  'small',  // for the sixth image
+  'small',   // for the seventh image
+  'small',  // for the eighth image
+  'large',
 ];
 
 const FashionShoots = () => (
   <div className="fashion-shoots-container">
     <section className="hero-section">
-      <h1 className="hero-title">NY Fashion Show</h1>
+      <h1 className="hero-title">Haritage Collection</h1>
       <p className="hero-description">Explore the highlights from the NY Fashion Show, showcasing the latest trends and stunning designs through our lens.</p>
     </section>
     <section className="gallery-section">
