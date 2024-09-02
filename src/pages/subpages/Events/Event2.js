@@ -16,39 +16,30 @@ import Event26 from '../../../assets/Event/Event26.jpg';
 
 const fashionShowImages = [
     Event15,
-    Event16, 
+    Event24,
     Event17,
-    Event18,
-    Event19,
+   
+    
     Event20,
-    Event21,
+    Event19,
+    Event18,
     Event22,
     Event23,
-    Event24,
+  
+    Event16,
     Event25,
     Event26,
+     Event21,
   
 ];
 
 // Fixed size classes for a consistent arrangement
 const fixedSizeClasses = [
+
   'large',   // for the first image
-  'small',   // for the second image
-  'medium',  // for the third image
-  'small',   // for the fourth image
-  'large',   // for the fifth image
-  'small',  // for the sixth image
-  'small',   // for the seventh image
-  'small',  // for the eighth image
-  'large',    // for the ninth image
-  'large',   // for the first image
-  'small',   // for the second image
-  'medium',  // for the third image
-  'small',   // for the fourth image
-  'large',   // for the fifth image
-  'small',  // for the sixth image
-  'small',   // for the seventh image
-  'small',  // for the eighth image
+  'small',   
+  'small',   
+  'small',
   'large',
 ];
 

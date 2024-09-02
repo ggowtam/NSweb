@@ -6,7 +6,7 @@ import Home3 from '../assets/Home3.jpg';
 import Home4 from '../assets/Home4.jpg';
 import Home5 from '../assets/Home5.jpg';
 import Home6 from '../assets/Home6.jpg';
-import Home7 from '../assets/Home7.jpg';
+import pre94 from '../assets/pre4/pre94.jpg';
 import Home8 from '../assets/Home8.jpg';
 import Home9 from '../assets/Home9.jpg';
 import Home10 from '../assets/Home10.jpg';
@@ -16,16 +16,16 @@ import Home13 from '../assets/Home13.jpg';
 import Home14 from '../assets/Home14.jpg';
 import Home15 from '../assets/Home15.jpg';
 import Home16 from '../assets/Home16.jpg';
-import Home17 from '../assets/Home16.jpg';
-import Home18 from '../assets/Home17.jpg';
-import Home19 from '../assets/Home17.jpg';
-import Home20 from '../assets/Home17.jpg';
-import Home21 from '../assets/Home17.jpg';
-import Home22 from '../assets/Home17.jpg';
-import Home23 from '../assets/Home17.jpg';
+import Home17 from '../assets/Home17.jpg';
+import Home18 from '../assets/Home18.jpg';
+import Home19 from '../assets/Home19.jpg';
+import Home20 from '../assets/Home20.jpg';
+import Home21 from '../assets/Home21.jpg';
+import Home22 from '../assets/Home22.jpg';
+import Home23 from '../assets/Home23.jpg';
 
 const imgArray = [
-  Home7,
+  pre94,
   Home8,
   Home22,
   Home9,
@@ -91,7 +91,7 @@ const ImageSection = () => {
             transform: `translateX(-${activeIndex * 26}%)`,
           }}
         >
-          {imgArray.concat(imgArray.slice(0, 4)).map((img, idx) => (
+          {imgArray.concat(imgArray.slice()).map((img, idx) => (
             <img src={img} alt={`Gallery ${idx}`} key={idx} className="gallery-img" />
           ))}
         </div>

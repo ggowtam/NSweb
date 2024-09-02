@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'; // Import Link
 import '../../styles/Weddings.scss'; // Import SCSS
 import wed1 from '../../assets/wed/wed1.jpg';
 import wed13 from '../../assets/wed/wed13.jpg';
-import presetImage3 from '../../assets/preset3.jpg';
+import Home6 from '../../assets/Home6.jpg';
 
 const weddingProjects = [
   {
@@ -19,9 +19,9 @@ const weddingProjects = [
     path: '/Weddings/wed2',
   },
   {
-    title: 'Annie + Ripan',
+    title: 'Veenu + Jannu',
     description: 'A captivating portrayal of affection that truly honors the bond between Annie and Ripan, showcasing a blend of candid and expertly captured photographs that encapsulate their unique personalities.',
-    image: presetImage3,
+    image: Home6,
     path: '/weddings/annie-ripan',
   }
 ];

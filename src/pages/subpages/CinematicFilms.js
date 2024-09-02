@@ -2,14 +2,48 @@
 import React from 'react';
 import '../../styles/AdFilms.scss'; // Import SCSS
 
-const Cinematics = () => (
+const CinematicFilms = () => (
   <div className="ad-films-container">
     <section className="hero-section">
       <h1 className="hero-title">Cinematics</h1>
       <p className="hero-description">Watch our latest Cinematics films that showcase our creativity and storytelling through engaging videos.</p>
     </section>
     <section className="videos-section">
-     
+    <div className="video-item">
+  <h2 className="video-title">Dinesh + Bavleen</h2>
+  <iframe
+    src="https://www.youtube.com/embed/Vt9bGKsW4ys"
+    title="New Video 1"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+    className="video-iframe"
+  ></iframe>
+</div>
+
+<div className="video-item">
+  <h2 className="video-title">Shilpa + Puneet</h2>
+  <iframe
+    src="https://www.youtube.com/embed/ULmAg8-Zny0"
+    title="New Video 2"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+    className="video-iframe"
+  ></iframe>
+</div>
+
+<div className="video-item">
+  <h2 className="video-title">Rhea Sarkaria's Graduation</h2>
+  <iframe
+    src="https://www.youtube.com/embed/jtis3y-kFBI"
+    title="New Video 3"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+    className="video-iframe"
+  ></iframe>
+</div>
       <div className="video-item">
         <h2 className="video-title">Shivani + Abhinav</h2>
         <iframe
@@ -124,4 +158,4 @@ const Cinematics = () => (
   </div>
 );
 
-export default Cinematics;
+export default CinematicFilms;

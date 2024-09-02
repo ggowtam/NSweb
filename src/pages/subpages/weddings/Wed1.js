@@ -14,7 +14,6 @@ import wed8 from '../../../assets/wed/wed8.jpg';
 import wed9 from '../../../assets/wed/wed9.jpg';
 import wed10 from '../../../assets/wed/wed10.jpg';
 import wed11 from '../../../assets/wed/wed11.jpg';
-import wed12 from '../../../assets/wed/wed12.jpg';
 
 const fashionShowImages = [
   wed1,
@@ -28,7 +27,6 @@ const fashionShowImages = [
   wed9,
   wed10,
   wed11,
-  wed12,
 ];
 
 // Fixed size classes for a consistent arrangement

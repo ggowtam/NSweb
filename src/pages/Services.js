@@ -16,7 +16,7 @@ import { MdPadding } from 'react-icons/md';
 const serviceItems = [
   { name: 'Weddings', image: Homepic, path: '/services/weddings' },
   { name: 'Pre & Post Weddings', image: pre3, path: '/services/pre-post-weddings' },
-  { name: 'Cinematics', image: Home8, path: '/services/cinematics' },
+  { name: 'Cinematic Films', image: Home8, path: '/services/cinematicFilms' },
   { name: 'Event Coverage', image: Event, path: '/services/event-coverage' },
   { name: 'Fashion Shoots', image: Home4, path: '/services/fashion-shoots' },
   { name: 'Ad Films', image: adfilm, path: '/services/ad-films' },
@@ -25,11 +25,11 @@ const serviceItems = [
 
 const Services = () => {
   const mainServices = serviceItems.filter(item => 
-    ['Weddings', 'Pre & Post Weddings', 'Cinematics', 'Event Coverage', 'Fashion Shoots', 'Ad Films'].includes(item.name)
+    ['Weddings', 'Pre & Post Weddings', 'Cinematic Films', 'Event Coverage', 'Fashion Shoots', 'Ad Films'].includes(item.name)
   );
 
   return (
-    <div className="services-container">
+    <div>
       <h2 className="services-title">Our Services</h2>
       
       <div className="services-grid">
@@ -63,6 +63,9 @@ const Services = () => {
           </div>
         </Link>
         
+      </div>
+      <div>
+        <br></br>
       </div>
       <div>
       <Parallax className="parallax-container" bgImage={parallaxImage1} strength={500}>

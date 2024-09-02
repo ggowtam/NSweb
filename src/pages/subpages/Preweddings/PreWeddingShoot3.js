@@ -4,14 +4,12 @@ import CustomAudioPlayer from '../../../components/CustomAudioPlayer';
 import audioFile from '../../../assets/audio1.mp3'; // Add your audio file path here
 
 import pre47 from '../../../assets/pre3/pre47.jpg';
-import pre48 from '../../../assets/pre3/pre48.jpg';
 import pre49 from '../../../assets/pre3/pre49.jpg';
 import pre50 from '../../../assets/pre3/pre50.jpg';
 import pre51 from '../../../assets/pre3/pre51.jpg';
 import pre52 from '../../../assets/pre3/pre52.jpg';
 import pre53 from '../../../assets/pre3/pre53.jpg';
 import pre54 from '../../../assets/pre3/pre54.jpg';
-import pre55 from '../../../assets/pre3/pre55.jpg';
 import pre56 from '../../../assets/pre3/pre56.jpg';
 import pre57 from '../../../assets/pre3/pre57.jpg';
 import pre58 from '../../../assets/pre3/pre58.jpg';
@@ -31,19 +29,16 @@ import pre71 from '../../../assets/pre3/pre71.jpg';
 import pre72 from '../../../assets/pre3/pre72.jpg';
 import pre73 from '../../../assets/pre3/pre73.jpg';
 import pre74 from '../../../assets/pre3/pre74.jpg';
-import pre75 from '../../../assets/pre3/pre75.jpg';
 import pre76 from '../../../assets/pre3/pre76.jpg';
 
 const fashionShowImages = [
   pre47,
-  pre48,
   pre49,
   pre50,
   pre51,
   pre52,
   pre53,
   pre54,
-  pre55,
   pre56,
   pre57,
   pre58,
@@ -63,7 +58,6 @@ const fashionShowImages = [
   pre72,
   pre73,
   pre74,
-  pre75,
   pre76,
   
 ];

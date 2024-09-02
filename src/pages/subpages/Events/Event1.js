@@ -21,7 +21,6 @@ import Event49 from '../../../assets/Event/Event49.jpg';
 import Event50 from '../../../assets/Event/Event50.jpg';
 import Event51 from '../../../assets/Event/Event51.jpg';
 import Event52 from '../../../assets/Event/Event52.jpg';
-import Event53 from '../../../assets/Event/Event53.jpg';
 import Event54 from '../../../assets/Event/Event54.jpg';
 import Event55 from '../../../assets/Event/Event55.jpg';
 
@@ -48,7 +47,6 @@ const fashionShowImages = [
     Event50,
     Event51,
     Event52,
-    Event53,
     Event54,
     Event55,
   

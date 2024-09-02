@@ -9,7 +9,6 @@ import pre3 from '../../../assets/pre1/pre3.jpg';
 import pre4 from '../../../assets/pre1/pre4.jpg';
 import pre5 from '../../../assets/pre1/pre5.jpg';
 import pre6 from '../../../assets/pre1/pre6.jpg';
-import pre7 from '../../../assets/pre1/pre7.jpg';
 import pre8 from '../../../assets/pre1/pre8.jpg';
 import pre9 from '../../../assets/pre1/pre9.jpg';
 import pre10 from '../../../assets/pre1/pre10.jpg';
@@ -23,11 +22,10 @@ const fashionShowImages = [
   pre4,
   pre5,
   pre6,
-  pre7,
-  pre8,
+ pre11,
   pre9,
   pre10,
-  pre11,
+  pre8,
   pre12,
   
 ];
@@ -40,7 +38,7 @@ const fixedSizeClasses = [
   'small',   // for the fourth image
   'large',   // for the fifth image
   'small',  // for the sixth image
-  'small',   // for the seventh image
+  'medium',   // for the seventh image
   'small',  // for the eighth image
   'large',    // for the ninth image
   'large',   // for the first image

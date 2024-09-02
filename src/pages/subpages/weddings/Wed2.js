@@ -7,22 +7,25 @@ import wed13 from '../../../assets/wed/wed13.jpg';
 import wed14 from '../../../assets/wed/wed14.jpg';
 import wed15 from '../../../assets/wed/wed15.jpg';
 import wed16 from '../../../assets/wed/wed16.jpg';
-import wed17 from '../../../assets/wed/wed17.jpg';
+import para3 from '../../../assets/para3.jpg';
 import wed18 from '../../../assets/wed/wed18.jpg';
 import wed19 from '../../../assets/wed/wed19.jpg';
 import wed20 from '../../../assets/wed/wed20.jpg';
 import wed21 from '../../../assets/wed/wed21.jpg';
+import wed22 from '../../../assets/wed/wed22.jpg';
 
 const fashionShowImages = [
     wed13,
     wed14,
-    wed15,
+    wed21,
     wed16,
-    wed17,
+    para3,
     wed18,
     wed19,
     wed20,
-    wed21,
+    
+    wed15,
+    wed22,
 ];
 
 // Fixed size classes for a consistent arrangement

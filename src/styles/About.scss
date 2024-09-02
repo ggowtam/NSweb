@@ -84,8 +84,9 @@
     height: 600px; /* Adjust height for smaller screens */
   }
 
-  .about-text h3 {
-    font-size: 1.2em; /* Smaller font size */
+  .about-text h3,
+  .about-text p {
+    display: none; /* Hide h3 and p tags on mobile */
   }
 
   .about-text {
@@ -102,11 +103,51 @@
   }
 
   .image-gallerya {
-    flex-direction: column; /* Stack images vertically on small screens */
+    flex-direction: column; 
+    padding: 10%;/* Stack images vertically on small screens */
     img {
       width: 100%; /* Make images responsive */
       max-width: 300px; /* Limit maximum width */
-      margin: 10px 0; /* Adjust margins for vertical layout */
+      margin: 10px 0;
+       /* Adjust margins for vertical layout */
+    }
+  }
+}
+
+/* 4K Screen Styles */
+@media (min-width: 2560px) {
+  .parallax-container {
+    height: 1600px; /* Increase height for large screens */
+  }
+
+  .about-text h3 {
+    font-size: 2.5em; /* Larger font size */
+  }
+
+  .about-text {
+    max-width: 1200px; /* Increase max-width for large screens */
+    padding-right: 10%; /* Increase padding */
+  }
+
+  .view-collection-btn {
+    padding: 20px 40px; /* Larger button size */
+    font-size: 1.5em; /* Increase font size */
+  }
+
+  .white-block {
+    padding: 80px 40px; /* Increase padding */
+  }
+
+  .centered-text {
+    font-size: 2em; /* Larger font size */
+    line-height: 1.8;
+  }
+
+  .image-gallerya {
+    margin-top: 80px; /* Increase margin */
+    img {
+      width: 500px; /* Increase image size */
+      margin: 0 20px; /* Adjust margins */
     }
   }
 }

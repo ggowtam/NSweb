@@ -21,7 +21,7 @@ import Services from './pages/Services';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import AdFilms from './pages/subpages/AdFilms';
-import Cinematics from './pages/subpages/Cinematics';
+import Cinematics from './pages/subpages/CinematicFilms';
 
 import Others from './pages/Others';
 import Weddings from './pages/subpages/Weddings';
@@ -84,7 +84,7 @@ function App() {
         <Route path="/services/pre-post-weddings" element={<PrePostWeddings />} />
         <Route path="/services/event-coverage" element={<EventCoverage />} />
         <Route path="/services/ad-films" element={<AdFilms />} />
-        <Route path="/services/cinematics" element={<Cinematics />} />
+        <Route path="/services/cinematicFilms" element={<Cinematics />} />
 
         <Route path="/services/fashion-shoots" element={<FashionShoots />} />
         <Route path="/services/others" element={<Others />} />

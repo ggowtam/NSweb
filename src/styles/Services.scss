@@ -15,7 +15,13 @@ $transition-speed: 0.3s;
   padding: 0;
   box-sizing: border-box;
 }
-
+.parallax-container {
+  height: 1000px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 .services-container {
   padding: 50px;
   padding-top: 100px; // Adjust this value to create more space at the top
@@ -31,6 +37,8 @@ $transition-speed: 0.3s;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
+ 
+  padding-top: 100px; 
 }
 
 .services-grid {
@@ -38,6 +46,7 @@ $transition-speed: 0.3s;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   justify-items: center;
+   padding: 50px;
 }
 
 .service-item {
